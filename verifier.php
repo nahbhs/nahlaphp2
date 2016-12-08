@@ -1,6 +1,6 @@
 <?php
 $systeme = $_REQUEST['systeme'];
-$connect=new mysqli("localhost","root","","description") or die ("impossible de connecter à la base de donnée");
+$connect=new mysqli("localhost","nahla","","description") or die ("impossible de connecter à la base de donnée");
 
 $resultat = $connect->query("SELECT * FROM os WHERE systeme='$systeme'");
 if(mysqli_num_rows($resultat) > 0) {
