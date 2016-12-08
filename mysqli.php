@@ -21,7 +21,7 @@ string $sqlstate;
 int $thread_id;
 int $warning_count;
 /* Methods */
-__construct ([ string $host = ini_get("mysqli.default_host") [, string $username = ini_get("mysqli.default_user") [, string $passwd = ini_get("mysqli.default_pw") [, string $dbname = "" [, int $port = ini_get("mysqli.default_port") [, string $socket = ini_get("mysqli.default_socket") ]]]]]] )
+__construct mysqli([ string $host = ini_get("mysqli.default_host") [, string $username = ini_get("mysqli.default_user") [, string $passwd = ini_get("mysqli.default_pw") [, string $dbname = "" [, int $port = ini_get("mysqli.default_port") [, string $socket = ini_get("mysqli.default_socket") ]]]]]] )
 bool autocommit ( bool $mode )
 bool change_user ( string $user , string $password , string $database )
 string character_set_name ( void )
