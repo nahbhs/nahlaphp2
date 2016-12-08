@@ -1,7 +1,7 @@
 <html>
 <body>
   <?php
-echo "Hello!";
+echo "Hello world!";
   ?>
 </body>
 </html>
