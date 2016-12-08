@@ -1,9 +1,9 @@
 <?php
 $systeme = $_REQUEST['systeme'];
-$connect=new mysqli("localhost","user1SA","LcSCOvwEoQVkjyK3","description") or die ("impossible de connecter à la base de donnée");
+$connect=new mysql_connect("localhost","user1SA","LcSCOvwEoQVkjyK3","description") or die ("impossible de connecter à la base de donnée");
 
-$resultat = $connect->query("SELECT * FROM os WHERE systeme='$systeme'");
-if(mysqli_num_rows($resultat) > 0) {
+$resultat = $connect->mysql_query("SELECT * FROM os WHERE systeme='$systeme'");
+if(mysql_num_rows($resultat) > 0) {
     $outputs["ensos"] = array();
  
     while ($row = mysqli_fetch_assoc($resultat)) {
